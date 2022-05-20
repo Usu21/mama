@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Caveat', cursive;
+}
+
+.wrapper{
+    height: 100vh;
+    background-image: url(rozovyi-fon-podarok-lenta-buket-tiulpany-den-materi.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.circel{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 10;
+    
+}
+.circel__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(233, 142, 142);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.titel{
+    text-align: center;
+    color: red;
+    z-index: 10;
+    position: relative;
+    
+}
+
+.circel{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.text{
+    background-color: white;
+    min-height: 200px;
+    min-width: 200px;
+    position: absolute;
+    border-radius: 20px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    display: none; 
+    font-size: 25px;
+
+}
+.circel:hover~.text {
+    display: block;
+}
